@@ -14,7 +14,39 @@ body {
 
 main {
   display: grid;
+  grid-template-areas: 
+  "one one"
+  "two two"
+  "tree tree"
+  "four four"
+  "five five"
+  "six six";
+
   gap: 32px;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.tree {
+  grid-area: tree;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+  grid-area: six;
 }
 
 .first-sec {
@@ -119,9 +151,63 @@ main {
 }
 
 .h2Sch{
+    font-size: 26px;
     font-weight: 500;
-    font-size: 34px;
-    line-height: 1.1;
-    letter-spacing: -0.04em;
+    line-height: 24px;
+    letter-spacing: -6%;
     color: #121212;
+}
+
+.three-sec{
+    background-color: #DBD1FC;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 2.5rem 0;
+}
+
+.Opti{
+    width: 75%;
+    text-align: center;
+}
+
+.fourt-sec{
+    background-color: #7551dc;
+    color: white;
+    border-radius: 10px;
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgGrow{
+    margin-left: 5%;
+}
+
+.pGrow{
+    text-align: center;
+    width: 60%;
+}
+
+.five-sec{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+hgroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.imgAvatar{
+    width: 50%;
 }
